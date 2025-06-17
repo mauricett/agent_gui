@@ -1,8 +1,8 @@
 :root {
     --border-width: 0.5px;
     --border-color: #ccc;
-	--handle-width: 2px;
-	--sidebar-width: 400px;
+    --handle-width: 2px;
+    --sidebar-width: 400px;
 }
 
 * {
