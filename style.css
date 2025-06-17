@@ -1,0 +1,42 @@
+:root {
+    --border-width: 0.5px;
+    --border-color: #ccc;
+	--handle-width: 2px;
+	--sidebar-width: 400px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.app-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: var(--sidebar-width);
+    flex-shrink: 0;
+    border-left: var(--border-width) solid var(--border-color);
+    border-top: var(--border-width) solid var(--border-color);
+    border-bottom: var(--border-width) solid var(--border-color);
+}
+
+.resize-handle {
+    width: var(--handle-width);
+    cursor: col-resize;
+    background-color: var(--border-color);
+}
+
+.chat-window {
+    flex: 1;
+    border-top: var(--border-width) solid var(--border-color);
+    border-right: var(--border-width) solid var(--border-color);
+    border-bottom: var(--border-width) solid var(--border-color);
+}
